@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookStore Home</title>
+  <!-- Fav icon -->
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- CSS e projektit -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet" />
+  <!-- Ikona -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 text-uppercase" href="home.html">BookStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-dark">
+          <li class="nav-item px-3">
+            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Start Book Detail -->
+  <main>
+    <div class="container mb-5">
+      <div class="row mt-5">
+        <div class="col-12 col-md-6 bg-light p-3 my-auto">
+          <h4 class="fw-light">FEATURED BOOK</h4>
+          <h1>Clean Code</h1>
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            quidem mollitia quam. Quae fugiat amet repudiandae quos temporibus
+            minus, nulla officiis odit consequatur impedit, vero nesciunt
+            consectetur, atque aliquid blanditiis.
+          </p>
+          <div class="info-book">
+            <p>Author : Jane Doe</p>
+            <p>Language : English</p>
+            <div class="rating">
+              Review:
+              <i id="1" class="fa-regular fa-star rating__star" onmouseover="startRating(this)"
+                startRating="starmark(this)"></i>
+              <i id="2" class="fa-regular fa-star rating__star" onmouseover="startRating(this)"
+                startRating="starmark(this)"></i>
+              <i id="3" class="fa-regular fa-star rating__star" onmouseover="startRating(this)"
+                startRating="starmark(this)"></i>
+              <i id="4" class="fa-regular fa-star rating__star" onmouseover="startRating(this)"
+                startRating="starmark(this)"></i>
+              <i id="5" class="fa-regular fa-star rating__star" onmouseover="startRating(this)"
+                startRating="starmark(this)"></i>
+            </div>
+          </div>
+          <p class="fw-bolder fs-3">$14.00</p>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center align-content-center imgBook">
+          <img src="images/programim_1.png" class="img-fluid" alt="Text image" />
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- End Book Detail -->
+
+  <!-- Start Footer -->
+  <footer class="py-5">
+    <div class="container-fluid p-5">
+      <div class="social pb-5">
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.snapchat.com/"><i class="fa-brands fa-snapchat"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="home.html">Home</a></li>
+        <li class="list-inline-item"><a href="home.html">BookStore</a></li>
+        <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright pt-5">BookStore © <span id="year"></span></p>
+  </footer>
+  <!-- End Footer -->
+  <!-- JavaScript -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/function.js"></script>
+</body>
+
+</html>

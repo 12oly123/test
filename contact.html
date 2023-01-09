@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookStore Home</title>
+  <!-- Fav icon -->
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- CSS e projektit -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet" />
+  <!-- Ikona -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 text-uppercase" href="home.html">BookStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-dark">
+          <li class="nav-item px-3">
+            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Start Contact -->
+  <main>
+    <div class="container my-lg-5 py-5">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23967.95403483022!2d19.818709849999998!3d41.3307383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13503110a95ab631%3A0xa2c2c15c21446e60!2sTirana%20Castle!5e0!3m2!1sen!2s!4v1670175023907!5m2!1sen!2s"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-12 col-md-6">
+          <form class="pb-5" onsubmit=" event.preventDefault(); getMessage()">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <label for="surname" class="form-label">Surname</label>
+              <input type="text" class="form-control" id="surname" placeholder="Your surname" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="comment" class="form-label">Comment</label>
+              <textarea class="form-control" id="comment" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-success w-25 px-lg-5 py-lg-2 fs-6">
+              Send
+            </button>
+          </form>
+          <div class="alert alert-success" role="alert">
+            <span id="message"> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- End Contact -->
+  <!-- Start Footer -->
+  <footer class="py-5">
+    <div class="container-fluid p-5">
+      <div class="social pb-5">
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.snapchat.com/"><i class="fa-brands fa-snapchat"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="home.html">Home</a></li>
+        <li class="list-inline-item"><a href="home.html">BookStore</a></li>
+        <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright pt-5">BookStore © <span id="year"></span></p>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- JavaScript -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/function.js"></script>
+</body>
+
+</html>
